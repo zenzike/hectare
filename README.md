@@ -4,7 +4,7 @@ Hectare
 This is a terrain drawing program.
 
 To get something interesting to happen, use the hectare binary like this
-./hectare data/terrain.tga data/texture.tga
+./hectare data/texture.tga data/terrain.tga
 
 Controls are:
 
