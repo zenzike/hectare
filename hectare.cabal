@@ -1,0 +1,35 @@
+Name:                hectare
+Version:             0.0
+Cabal-Version:       >= 1.2
+Synopsis:            A terrain renderer
+Description:         A terrain renderer written using OpenGL
+Category:            Game
+License:             GPL
+License-File:        LICENSE
+Author:              Nicolas Wu <nicolas.wu@gmail.com>
+Maintainer:          Nicolas Wu <nicolas.wu@gmail.com>
+Build-Depends:       base
+Build-Type:          Simple
+
+Extra-Source-Files:  README.md
+
+Executable hectare
+  Main-Is:           Main.hs
+  Ghc-Options:       -Wall -O2
+  HS-Source-Dirs:    src
+  Build-Depends:     base > 4, containers >= 0.2.0.1, bytestring >= 0.9.1.4,
+                     binary >= 0.5.0.1,
+                     GLUT >= 2.3,
+                     OpenGL >= 2.5, OpenGLRaw >= 1.2,
+                     Tensor >= 1.0.0.1, StateVar >= 1, array >= 0.2.0.0,
+                     vector > 0.6, mtl > 1.1
+  Other-Modules:     Hectare.State
+                     Hectare.Render
+                     Hectare.Image
+                     Hectare.Camera
+                     Hectare.Util
+                     Hectare.Image.SGI
+                     Hectare.Image.TGA
+                     Hectare.Terrain
+                     Hectare.Terrain.VectorTerrain
+                     Hectare.Terrain.PerlinTerrain
